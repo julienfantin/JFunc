@@ -38,6 +38,8 @@
     return [NSArray arrayWithArray:map];
 }
 
+#pragma - reduce
+
 - (id)reduce:(id)acumulator withBlock:(JFuncReducingBlock)block
 {
     for (id obj in self) {
@@ -45,6 +47,8 @@
     }
     return acumulator;
 }
+
+#pragma - filter
 
 - (NSArray *)filteredArrayUsingBlock:(JFuncEnumeratedMappingBlock)block
 {
@@ -57,6 +61,33 @@
         }
     }
     return [NSArray arrayWithArray:filter];
+}
+
+#pragma -partition
+
+- (NSArray *)partitionWithStep:(NSUInteger)step
+{
+    return [self partitionWithItems:step andStep:step];
+}
+
+- (NSArray *)partitionWithItems:(NSUInteger)items andStep:(NSUInteger)step
+{
+    NSMutableArray *partition = [NSMutableArray array];
+    NSUInteger count = [self count];
+    
+    for (NSUInteger position = 0; position < count; position += step) {
+        NSUInteger maxLength = position + items < count ? items : count - position;
+        NSRange range = NSMakeRange(position, maxLength);
+        NSIndexSet *set = [NSIndexSet indexSetWithIndexesInRange:range];
+        
+        id objects = [self objectsAtIndexes:set];
+        
+        if (objects) {
+            [partition addObject:objects];
+        }
+    }
+    
+    return [NSArray arrayWithArray:partition];
 }
 
 @end
