@@ -16,6 +16,9 @@
 		71ED6978161EE52C00007A88 /* libJFunc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED695F161EE52C00007A88 /* libJFunc.a */; };
 		71ED697E161EE52C00007A88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71ED697C161EE52C00007A88 /* InfoPlist.strings */; };
 		71ED6981161EE52C00007A88 /* JFuncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED6980161EE52C00007A88 /* JFuncTests.m */; };
+		71ED698C161EE54700007A88 /* JFuncArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED698B161EE54700007A88 /* JFuncArrayTests.m */; };
+		71ED698F161EE6DB00007A88 /* NSArray+JFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED698E161EE6DB00007A88 /* NSArray+JFunc.m */; };
+		71ED6990161EE6DB00007A88 /* NSArray+JFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED698E161EE6DB00007A88 /* NSArray+JFunc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,10 @@
 		71ED697D161EE52C00007A88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		71ED697F161EE52C00007A88 /* JFuncTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFuncTests.h; sourceTree = "<group>"; };
 		71ED6980161EE52C00007A88 /* JFuncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFuncTests.m; sourceTree = "<group>"; };
+		71ED698A161EE54700007A88 /* JFuncArrayTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFuncArrayTests.h; sourceTree = "<group>"; };
+		71ED698B161EE54700007A88 /* JFuncArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFuncArrayTests.m; sourceTree = "<group>"; };
+		71ED698D161EE6DB00007A88 /* NSArray+JFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JFunc.h"; sourceTree = "<group>"; };
+		71ED698E161EE6DB00007A88 /* NSArray+JFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JFunc.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,8 @@
 				71ED6967161EE52C00007A88 /* JFunc.h */,
 				71ED6969161EE52C00007A88 /* JFunc.m */,
 				71ED6965161EE52C00007A88 /* Supporting Files */,
+				71ED698D161EE6DB00007A88 /* NSArray+JFunc.h */,
+				71ED698E161EE6DB00007A88 /* NSArray+JFunc.m */,
 			);
 			path = JFunc;
 			sourceTree = "<group>";
@@ -132,6 +141,8 @@
 				71ED697F161EE52C00007A88 /* JFuncTests.h */,
 				71ED6980161EE52C00007A88 /* JFuncTests.m */,
 				71ED697A161EE52C00007A88 /* Supporting Files */,
+				71ED698A161EE54700007A88 /* JFuncArrayTests.h */,
+				71ED698B161EE54700007A88 /* JFuncArrayTests.m */,
 			);
 			path = JFuncTests;
 			sourceTree = "<group>";
@@ -244,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71ED696A161EE52C00007A88 /* JFunc.m in Sources */,
+				71ED698F161EE6DB00007A88 /* NSArray+JFunc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				71ED6981161EE52C00007A88 /* JFuncTests.m in Sources */,
+				71ED698C161EE54700007A88 /* JFuncArrayTests.m in Sources */,
+				71ED6990161EE6DB00007A88 /* NSArray+JFunc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
