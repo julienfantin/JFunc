@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71ED6963161EE52C00007A88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED6962161EE52C00007A88 /* Foundation.framework */; };
+		71ED6968161EE52C00007A88 /* JFunc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 71ED6967161EE52C00007A88 /* JFunc.h */; };
+		71ED696A161EE52C00007A88 /* JFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED6969161EE52C00007A88 /* JFunc.m */; };
+		71ED6972161EE52C00007A88 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED6971161EE52C00007A88 /* SenTestingKit.framework */; };
+		71ED6974161EE52C00007A88 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED6973161EE52C00007A88 /* UIKit.framework */; };
+		71ED6975161EE52C00007A88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED6962161EE52C00007A88 /* Foundation.framework */; };
+		71ED6978161EE52C00007A88 /* libJFunc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71ED695F161EE52C00007A88 /* libJFunc.a */; };
+		71ED697E161EE52C00007A88 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 71ED697C161EE52C00007A88 /* InfoPlist.strings */; };
+		71ED6981161EE52C00007A88 /* JFuncTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED6980161EE52C00007A88 /* JFuncTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71ED6976161EE52C00007A88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 71ED6956161EE52C00007A88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71ED695E161EE52C00007A88;
+			remoteInfo = JFunc;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		71ED695D161EE52C00007A88 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				71ED6968161EE52C00007A88 /* JFunc.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		71ED695F161EE52C00007A88 /* libJFunc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJFunc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		71ED6962161EE52C00007A88 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		71ED6966161EE52C00007A88 /* JFunc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JFunc-Prefix.pch"; sourceTree = "<group>"; };
+		71ED6967161EE52C00007A88 /* JFunc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFunc.h; sourceTree = "<group>"; };
+		71ED6969161EE52C00007A88 /* JFunc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFunc.m; sourceTree = "<group>"; };
+		71ED6970161EE52C00007A88 /* JFuncTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JFuncTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		71ED6971161EE52C00007A88 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		71ED6973161EE52C00007A88 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		71ED697B161EE52C00007A88 /* JFuncTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JFuncTests-Info.plist"; sourceTree = "<group>"; };
+		71ED697D161EE52C00007A88 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		71ED697F161EE52C00007A88 /* JFuncTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JFuncTests.h; sourceTree = "<group>"; };
+		71ED6980161EE52C00007A88 /* JFuncTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JFuncTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71ED695C161EE52C00007A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71ED6963161EE52C00007A88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71ED696C161EE52C00007A88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71ED6972161EE52C00007A88 /* SenTestingKit.framework in Frameworks */,
+				71ED6974161EE52C00007A88 /* UIKit.framework in Frameworks */,
+				71ED6975161EE52C00007A88 /* Foundation.framework in Frameworks */,
+				71ED6978161EE52C00007A88 /* libJFunc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71ED6954161EE52C00007A88 = {
+			isa = PBXGroup;
+			children = (
+				71ED6964161EE52C00007A88 /* JFunc */,
+				71ED6979161EE52C00007A88 /* JFuncTests */,
+				71ED6961161EE52C00007A88 /* Frameworks */,
+				71ED6960161EE52C00007A88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		71ED6960161EE52C00007A88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71ED695F161EE52C00007A88 /* libJFunc.a */,
+				71ED6970161EE52C00007A88 /* JFuncTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71ED6961161EE52C00007A88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71ED6962161EE52C00007A88 /* Foundation.framework */,
+				71ED6971161EE52C00007A88 /* SenTestingKit.framework */,
+				71ED6973161EE52C00007A88 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71ED6964161EE52C00007A88 /* JFunc */ = {
+			isa = PBXGroup;
+			children = (
+				71ED6967161EE52C00007A88 /* JFunc.h */,
+				71ED6969161EE52C00007A88 /* JFunc.m */,
+				71ED6965161EE52C00007A88 /* Supporting Files */,
+			);
+			path = JFunc;
+			sourceTree = "<group>";
+		};
+		71ED6965161EE52C00007A88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71ED6966161EE52C00007A88 /* JFunc-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71ED6979161EE52C00007A88 /* JFuncTests */ = {
+			isa = PBXGroup;
+			children = (
+				71ED697F161EE52C00007A88 /* JFuncTests.h */,
+				71ED6980161EE52C00007A88 /* JFuncTests.m */,
+				71ED697A161EE52C00007A88 /* Supporting Files */,
+			);
+			path = JFuncTests;
+			sourceTree = "<group>";
+		};
+		71ED697A161EE52C00007A88 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71ED697B161EE52C00007A88 /* JFuncTests-Info.plist */,
+				71ED697C161EE52C00007A88 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71ED695E161EE52C00007A88 /* JFunc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71ED6984161EE52C00007A88 /* Build configuration list for PBXNativeTarget "JFunc" */;
+			buildPhases = (
+				71ED695B161EE52C00007A88 /* Sources */,
+				71ED695C161EE52C00007A88 /* Frameworks */,
+				71ED695D161EE52C00007A88 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JFunc;
+			productName = JFunc;
+			productReference = 71ED695F161EE52C00007A88 /* libJFunc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		71ED696F161EE52C00007A88 /* JFuncTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71ED6987161EE52C00007A88 /* Build configuration list for PBXNativeTarget "JFuncTests" */;
+			buildPhases = (
+				71ED696B161EE52C00007A88 /* Sources */,
+				71ED696C161EE52C00007A88 /* Frameworks */,
+				71ED696D161EE52C00007A88 /* Resources */,
+				71ED696E161EE52C00007A88 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71ED6977161EE52C00007A88 /* PBXTargetDependency */,
+			);
+			name = JFuncTests;
+			productName = JFuncTests;
+			productReference = 71ED6970161EE52C00007A88 /* JFuncTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71ED6956161EE52C00007A88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Julien Fantin";
+			};
+			buildConfigurationList = 71ED6959161EE52C00007A88 /* Build configuration list for PBXProject "JFunc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 71ED6954161EE52C00007A88;
+			productRefGroup = 71ED6960161EE52C00007A88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71ED695E161EE52C00007A88 /* JFunc */,
+				71ED696F161EE52C00007A88 /* JFuncTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71ED696D161EE52C00007A88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71ED697E161EE52C00007A88 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		71ED696E161EE52C00007A88 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71ED695B161EE52C00007A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71ED696A161EE52C00007A88 /* JFunc.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71ED696B161EE52C00007A88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71ED6981161EE52C00007A88 /* JFuncTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71ED6977161EE52C00007A88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71ED695E161EE52C00007A88 /* JFunc */;
+			targetProxy = 71ED6976161EE52C00007A88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		71ED697C161EE52C00007A88 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71ED697D161EE52C00007A88 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71ED6982161EE52C00007A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		71ED6983161EE52C00007A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71ED6985161EE52C00007A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JFunc.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFunc/JFunc-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		71ED6986161EE52C00007A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JFunc.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFunc/JFunc-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		71ED6988161EE52C00007A88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFunc/JFunc-Prefix.pch";
+				INFOPLIST_FILE = "JFuncTests/JFuncTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		71ED6989161EE52C00007A88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JFunc/JFunc-Prefix.pch";
+				INFOPLIST_FILE = "JFuncTests/JFuncTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71ED6959161EE52C00007A88 /* Build configuration list for PBXProject "JFunc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71ED6982161EE52C00007A88 /* Debug */,
+				71ED6983161EE52C00007A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71ED6984161EE52C00007A88 /* Build configuration list for PBXNativeTarget "JFunc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71ED6985161EE52C00007A88 /* Debug */,
+				71ED6986161EE52C00007A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		71ED6987161EE52C00007A88 /* Build configuration list for PBXNativeTarget "JFuncTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71ED6988161EE52C00007A88 /* Debug */,
+				71ED6989161EE52C00007A88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71ED6956161EE52C00007A88 /* Project object */;
+}
