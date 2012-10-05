@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+
+typedef void (^JFuncVoidBlock) (id obj);
 typedef id (^JFuncMappingBlock) (id obj);
+typedef id (^JFuncReducingBlock) (id accumulator, id obj);
 
 @interface NSArray (JFunc)
 - (NSArray *)mapWithBlock:(JFuncMappingBlock)block;
+- (id)reduce:(id)acumulator withBlock:(JFuncReducingBlock)block;
 @end

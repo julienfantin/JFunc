@@ -21,4 +21,12 @@
     return [NSArray arrayWithArray:map];
 }
 
+- (id)reduce:(id)acumulator withBlock:(JFuncReducingBlock)block
+{
+    for (id obj in self) {
+        acumulator = block(acumulator, obj);
+    }
+    return acumulator;
+}
+
 @end
