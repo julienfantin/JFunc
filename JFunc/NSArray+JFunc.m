@@ -10,6 +10,26 @@
 
 @implementation NSArray (JFunc)
 
+#pragma - dictionary
+
+- (NSDictionary *)toDictionary
+{
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithCapacity:[self count]];
+    
+    for (id tuple in self) {
+        
+        if (NO == [tuple isKindOfClass:[NSArray class]]) {
+            continue;
+        }
+        
+        id key = [tuple objectAtIndex:0];
+        id obj = [tuple objectAtIndex:1];
+        [dict setObject:obj forKey:key];
+    }
+    
+    return [NSDictionary dictionaryWithDictionary:dict];
+}
+
 #pragma - range
 
 + (NSArray *)arrayWithRange:(NSRange)range

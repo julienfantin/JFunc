@@ -10,6 +10,17 @@
 
 @implementation JFuncArrayTests
 
+#pragma - dictionary
+
+- (void)testToDictionary
+{
+    NSArray *test = @[@[@"a", @1], @[@"b", @2]];
+    NSDictionary *expected = @{@"a": @1, @"b": @2};
+    NSDictionary *result = [test toDictionary];
+    
+    STAssertTrue([result isEqualToDictionary:expected], @"Should map tuples of @[key, obj] to key/value pairs in returned dictionary.");
+}
+
 #pragma - range
 
 - (void)testRange

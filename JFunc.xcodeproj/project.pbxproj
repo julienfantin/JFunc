@@ -19,6 +19,9 @@
 		71ED698C161EE54700007A88 /* JFuncArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED698B161EE54700007A88 /* JFuncArrayTests.m */; };
 		71ED698F161EE6DB00007A88 /* NSArray+JFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED698E161EE6DB00007A88 /* NSArray+JFunc.m */; };
 		71ED6990161EE6DB00007A88 /* NSArray+JFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED698E161EE6DB00007A88 /* NSArray+JFunc.m */; };
+		71ED6993161F357600007A88 /* JFuncDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED6992161F357600007A88 /* JFuncDictionaryTests.m */; };
+		71ED6996161F365A00007A88 /* NSDictionary+JFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED6995161F365A00007A88 /* NSDictionary+JFunc.m */; };
+		71ED6997161F365A00007A88 /* NSDictionary+JFunc.m in Sources */ = {isa = PBXBuildFile; fileRef = 71ED6995161F365A00007A88 /* NSDictionary+JFunc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,10 @@
 		71ED698B161EE54700007A88 /* JFuncArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFuncArrayTests.m; sourceTree = "<group>"; };
 		71ED698D161EE6DB00007A88 /* NSArray+JFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+JFunc.h"; sourceTree = "<group>"; };
 		71ED698E161EE6DB00007A88 /* NSArray+JFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JFunc.m"; sourceTree = "<group>"; };
+		71ED6991161F357600007A88 /* JFuncDictionaryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JFuncDictionaryTests.h; sourceTree = "<group>"; };
+		71ED6992161F357600007A88 /* JFuncDictionaryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JFuncDictionaryTests.m; sourceTree = "<group>"; };
+		71ED6994161F365A00007A88 /* NSDictionary+JFunc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+JFunc.h"; sourceTree = "<group>"; };
+		71ED6995161F365A00007A88 /* NSDictionary+JFunc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+JFunc.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +130,8 @@
 				71ED6965161EE52C00007A88 /* Supporting Files */,
 				71ED698D161EE6DB00007A88 /* NSArray+JFunc.h */,
 				71ED698E161EE6DB00007A88 /* NSArray+JFunc.m */,
+				71ED6994161F365A00007A88 /* NSDictionary+JFunc.h */,
+				71ED6995161F365A00007A88 /* NSDictionary+JFunc.m */,
 			);
 			path = JFunc;
 			sourceTree = "<group>";
@@ -143,6 +152,8 @@
 				71ED697A161EE52C00007A88 /* Supporting Files */,
 				71ED698A161EE54700007A88 /* JFuncArrayTests.h */,
 				71ED698B161EE54700007A88 /* JFuncArrayTests.m */,
+				71ED6991161F357600007A88 /* JFuncDictionaryTests.h */,
+				71ED6992161F357600007A88 /* JFuncDictionaryTests.m */,
 			);
 			path = JFuncTests;
 			sourceTree = "<group>";
@@ -256,6 +267,7 @@
 			files = (
 				71ED696A161EE52C00007A88 /* JFunc.m in Sources */,
 				71ED698F161EE6DB00007A88 /* NSArray+JFunc.m in Sources */,
+				71ED6996161F365A00007A88 /* NSDictionary+JFunc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +278,8 @@
 				71ED6981161EE52C00007A88 /* JFuncTests.m in Sources */,
 				71ED698C161EE54700007A88 /* JFuncArrayTests.m in Sources */,
 				71ED6990161EE6DB00007A88 /* NSArray+JFunc.m in Sources */,
+				71ED6993161F357600007A88 /* JFuncDictionaryTests.m in Sources */,
+				71ED6997161F365A00007A88 /* NSDictionary+JFunc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
