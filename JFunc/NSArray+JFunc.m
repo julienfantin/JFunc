@@ -29,4 +29,17 @@
     return acumulator;
 }
 
+- (NSArray *)filteredArrayUsingBlock:(JFuncEnumeratedMappingBlock)block
+{
+    NSMutableArray *filter = [NSMutableArray arrayWithCapacity:[self count]];
+    for (id obj in self) {
+        int index = [self indexOfObject:obj];
+        id result = block(index, obj);
+        if (result != nil) {
+            [filter addObject:result];
+        }
+    }
+    return [NSArray arrayWithArray:filter];
+}
+
 @end

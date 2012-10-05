@@ -11,9 +11,11 @@
 
 typedef void (^JFuncVoidBlock) (id obj);
 typedef id (^JFuncMappingBlock) (id obj);
+typedef id (^JFuncEnumeratedMappingBlock) (int index, id obj);
 typedef id (^JFuncReducingBlock) (id accumulator, id obj);
 
 @interface NSArray (JFunc)
 - (NSArray *)mapWithBlock:(JFuncMappingBlock)block;
 - (id)reduce:(id)acumulator withBlock:(JFuncReducingBlock)block;
+- (NSArray *)filteredArrayUsingBlock:(JFuncEnumeratedMappingBlock)block;
 @end

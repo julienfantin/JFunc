@@ -10,6 +10,8 @@
 
 @implementation JFuncArrayTests
 
+#pragma - map
+
 - (void)testMapWithBlock
 {
     NSArray *test = @[@1, @2, @3];
@@ -23,6 +25,8 @@
     STAssertFalse([test isEqual:result], @"should be free of side-effects by returning a new array.");
     STAssertTrue([result isEqualToArray:expected], @"should be the result of mapping block over each element");
 }
+
+#pragma - reduce
 
 - (void)testReduceAccumulator
 {
@@ -48,7 +52,22 @@
         return [accumulator arrayByAddingObject:value]; // Could also add to accumulator and return it
     }];
     
-    STAssertTrue([result isEqualToArray:expected], @"Should ");
+    STAssertTrue([result isEqualToArray:expected], @"Should reassign the accumulator to the object returned by the block.");
+}
+
+#pragma - filter
+
+- (void)testFilter
+{
+    NSArray *test= @[@1, @2, @3, @4, @5];
+    NSArray *expected = @[@1, @3, @5];
+    
+    NSArray *result = [test filteredArrayUsingBlock:^(int index, id obj) {
+        BOOL even = ([obj intValue] % 2) == 0;
+        return even ? nil : obj;
+    }];
+    
+    STAssertTrue([result isEqualToArray:expected], @"Should filter out even numbers.");
 }
 
 @end
