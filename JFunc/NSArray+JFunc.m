@@ -10,6 +10,23 @@
 
 @implementation NSArray (JFunc)
 
+#pragma - range
+
++ (NSArray *)arrayWithRange:(NSRange)range
+{
+    NSIndexSet *set = [NSIndexSet indexSetWithIndexesInRange:range];
+
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:set.count];
+    
+    [set enumerateIndexesUsingBlock:^(NSUInteger idx, BOOL *stop) {
+        [array addObject:@((NSInteger) idx)];
+    }];
+    
+    return [NSArray arrayWithArray:array];
+}
+
+#pragma - map
+
 - (NSArray *)mapWithBlock:(JFuncMappingBlock)block
 {
     NSMutableArray *map = [NSMutableArray arrayWithCapacity:[self count]];

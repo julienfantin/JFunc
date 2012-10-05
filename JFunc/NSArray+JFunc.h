@@ -15,6 +15,7 @@ typedef id (^JFuncEnumeratedMappingBlock) (int index, id obj);
 typedef id (^JFuncReducingBlock) (id accumulator, id obj);
 
 @interface NSArray (JFunc)
++ (NSArray *)arrayWithRange:(NSRange)range;
 - (NSArray *)mapWithBlock:(JFuncMappingBlock)block;
 - (id)reduce:(id)acumulator withBlock:(JFuncReducingBlock)block;
 - (NSArray *)filteredArrayUsingBlock:(JFuncEnumeratedMappingBlock)block;

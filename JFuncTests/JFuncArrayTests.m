@@ -10,6 +10,20 @@
 
 @implementation JFuncArrayTests
 
+#pragma - range
+
+- (void)testRange
+{
+    int location = 10, length = 10;
+    NSArray *range = [NSArray arrayWithRange:NSMakeRange(location, length)];
+    STAssertEquals([range count], (NSUInteger)length,
+                   @"Should have proper lentgth.");
+    STAssertEqualObjects([range objectAtIndex:0], @10,
+                         @"First object should be an NSNumber of the first value in range.");
+    STAssertEqualObjects([range lastObject], @19,
+                         @"Last object should be an NSNumber of the last value in range.");
+}
+
 #pragma - map
 
 - (void)testMapWithBlock
